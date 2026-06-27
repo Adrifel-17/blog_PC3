@@ -68,7 +68,7 @@ selected = option_menu(
 # Verifica si el usuario ha seleccionado la opción "Inicio" en el menú de navegación horizontal.
 # OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "selected"
 if selected == 'Inicio':
-    st.markdown("<h1 style='text-align: center;'>Nombre del blog</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Wabi Sabi LFTM</h1>", unsafe_allow_html=True)
     # Muestra un título principal utilizando HTML -> st.markdown("...", unsafe_allow_html=True)
     # La etiqueta <h1> define un encabezado de nivel 1 -> "<h1 ...>...</h1>"
     # El estilo CSS 'text-align: center' centra el texto -> style='text-align: center;'
@@ -85,13 +85,14 @@ if selected == 'Inicio':
 
     # Define una cadena de texto multilínea que contiene una guía para redactar una presentación personal.
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres?, 
-    ¿De dónde eres?, 
-    ¿Qué estudias?, 
-    ¿Qué te gusta de tu carrera?, 
-    ¿Qué te gustaría hacer en el futuro?, 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Hola!
+    Me llamó Adrián Felices , 
+    nací en Ayacucho, Perú, el 17 de Marzo de 2005. 
+    A mis 17 años migre a la ciudad de Lima y empezé a estudiar Comunicación Audiovisual en la PUCP. 
+    Aunque tenía mis dudas al inicio y otros intereses, me fasciné por la creación de guiones y la dirección audiovisual por lo que,  
+    en un futuro me gustaría realizar mi propia productora y participar en proyectos que se relacionen al cine pero y al teatro, 
+    Pero por ahora, disfrutó de aprender cosas nuevas, como programar y mostrarles este mensaje, aunque estando en casa prefiero ser un alma bohemia
+    que disfruta de hacer algo de música.
     """
 
     # Muestra el texto en la segunda columna utilizando HTML
@@ -101,16 +102,19 @@ if selected == 'Inicio':
     # unsafe_allow_html=True permite que Streamlit interprete las etiquetas HTML incluidas en la cadena
 
 elif selected == 'Experiencia':
-    st.markdown("<h1 style='text-align: center;'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'> Entre cortos y nexos 🎥🔗 </h1>", unsafe_allow_html=True)
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?, 
-    ¿Qué te ha enseñado la programación?, 
-    ¿Qué te gusta de programar?, 
-    ¿Qué te gustaría hacer con la programación en el futuro?
-    ¿Cómo se relaciona lo que haz aprendido con tu carrera?
+    Aprender a programar para mi, fue revivir una experiencia que me hubiera gustado conocer más a fondo antes. 
+    En un inicio no me era nada complicado entender las bases y funciones del lenguaje de Python aunque luego eso haya cambiando tan solo un poco. 
+    Programar es toda una aventura que me ha enseñado que la historia tiene demasiado tiempo libre para generar un sinfín de información,
+    lo cual, al programar, tiende a ser un dolor de cabeza debido a la cantidad, pero, aun asi, no deja de ser una experiencia divertida cada vez que superas o recuerdas que hacer. 
+    Por ello puedo decir que, algo que me encanta de la programación es que puedes descubrir el potencial de estructurar lo que puedas imaginar, claro... siempre que conozcas como hacerlo.
+    Finalmente, lo recalco, la programación resulta muy útil no solo para el hecho de "programar" sino también para entender el funcionamiento de varias cosas cotidianas que resultan de ese hecho: dar un solo click, 
+    cada imagen que podamos observar y lo que queramos mostrar a los que luego podrán llegar. Esto último es lo que creo que habla más sobre el comunicador que puedo llegar a ser, no seré un código pero podré crear cosas 
+    para los demás empezando por un 
+    ¡Hola Mundo!
     """
 
     # Mostramos el texto
@@ -119,27 +123,39 @@ elif selected == 'Experiencia':
     # Formato A
     # Agregamos todo los videos realizados en las prácticas anteriores
     # Muestra un subtítulo para identificar el contenido del video
-    st.subheader("🎥 Video 1 - YouTube")
+    #st.subheader("🎥 Video 1 - YouTube")
     # Inserta un video de YouTube directamente en la aplicación.
     # El usuario puede reproducirlo sin salir de Streamlit.
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
+    #st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
     # Agrega una breve descripción del video.
-    st.caption(
-        "En este video se presenta ...., "
-    )
+    #st.caption(
+    #    "En este video se presenta ...., "
+    #)
 
     # Formato B
     # Muestra un subtítulo para identificar el contenido del video
-    st.subheader("🎥 Video 1 - Google Drive")
+    st.subheader("🎥 Video 1 - Booleanos lógicos y comparativos")
     # Crea un botón que redirige al usuario a un video alojado en Google Drive. 
     # Al hacer clic, el video se abrirá en una nueva pestaña del navegador.
     st.link_button(
             "Ver video",
-            "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link"
+            "https://drive.google.com/file/d/1q4iWLzfT_ZMIGW6HKnpmrvh0_xP55aE7/view?usp=drive_link"
         )
     # Agrega una breve descripción del video.
     st.caption(
-        "En este video se presenta ...., "
+        "En este video se aborda sobre como se presentan los operadores del lenguaje de Python: boleanos. Aprendiendo sobre como se dividen, cuales son y en que situaciones los podemos usar "
+    )
+    st.subheader("🎥 Video 2 - Declaraciones condicionales")
+    # Crea un botón que redirige al usuario a un video alojado en Google Drive. 
+    # Al hacer clic, el video se abrirá en una nueva pestaña del navegador.
+    st.link_button(
+            "Ver video",
+            "https://drive.google.com/file/d/1-KYwADrvYh-E-SCRFSwVO24jv10XfSua/view?usp=sharing"
+        )
+    # Agrega una breve descripción del video.
+    st.caption(
+        "En este video se presenta una explicación básica sobre las declaraciones condicionales:if-elif, else, en el lneguaje de Python. Podremos aprender sobre sus bases, funciones y utilidades"
+        
     )
 
 elif selected == 'Gráficos':

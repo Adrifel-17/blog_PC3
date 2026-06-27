@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_63057c9427c93763a8ea78abf6f703be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_63057c9427c93763a8ea78abf6f703be" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_63057c9427c93763a8ea78abf6f703be = L.map(
+                "map_63057c9427c93763a8ea78abf6f703be",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ebd588f646e0844a2a66505f88461180 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ebd588f646e0844a2a66505f88461180.addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var marker_9e663d3a8e797858083727590724a6be = L.marker(
+                [53.43098093124301, -2.960753026985709],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_c329d7f40ff60b5d9e6c082950bf2490 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91ecc064be8c6d79a13a9ba5894b0d6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ade4a39f595d4ece98007e5df24b77f7 = $(`<div id="html_ade4a39f595d4ece98007e5df24b77f7" style="width: 100.0%; height: 100.0%;"><b>Liverpool</b><br>Estadio: Anfield<br></div>`)[0];
+                popup_91ecc064be8c6d79a13a9ba5894b0d6a.setContent(html_ade4a39f595d4ece98007e5df24b77f7);
+            
+        
+
+        marker_9e663d3a8e797858083727590724a6be.bindPopup(popup_91ecc064be8c6d79a13a9ba5894b0d6a)
+        ;
+
+        
+    
+    
+                marker_9e663d3a8e797858083727590724a6be.setIcon(icon_c329d7f40ff60b5d9e6c082950bf2490);
+            
+    
+            var marker_3150c2bc4978f4e39e0125c0e68119a1 = L.marker(
+                [52.509239033796526, -1.8847184269857096],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_166ad8b5e7c04946483a87e6282a7ec0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7db723344a2ac3731ea329ce7b6c92d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2eb7c3c1d7c063ab3309768bfeb8852 = $(`<div id="html_e2eb7c3c1d7c063ab3309768bfeb8852" style="width: 100.0%; height: 100.0%;"><b>Aston Villa</b><br>Estadio: Villa Park<br></div>`)[0];
+                popup_7db723344a2ac3731ea329ce7b6c92d6.setContent(html_e2eb7c3c1d7c063ab3309768bfeb8852);
+            
+        
+
+        marker_3150c2bc4978f4e39e0125c0e68119a1.bindPopup(popup_7db723344a2ac3731ea329ce7b6c92d6)
+        ;
+
+        
+    
+    
+                marker_3150c2bc4978f4e39e0125c0e68119a1.setIcon(icon_166ad8b5e7c04946483a87e6282a7ec0);
+            
+    
+            var marker_151bb5c080c8e65319c82e4322c64806 = L.marker(
+                [50.8617112257911, -0.08351159629998961],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_04bb699aeeb0bc36b36630520142eac6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6cdb9403d372f95d2c1f311a8a09f7f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9930fee6345267574f396186b1f6e6cd = $(`<div id="html_9930fee6345267574f396186b1f6e6cd" style="width: 100.0%; height: 100.0%;"><b>Brighton</b><br>Estadio: Brighton Stadium<br></div>`)[0];
+                popup_6cdb9403d372f95d2c1f311a8a09f7f8.setContent(html_9930fee6345267574f396186b1f6e6cd);
+            
+        
+
+        marker_151bb5c080c8e65319c82e4322c64806.bindPopup(popup_6cdb9403d372f95d2c1f311a8a09f7f8)
+        ;
+
+        
+    
+    
+                marker_151bb5c080c8e65319c82e4322c64806.setIcon(icon_04bb699aeeb0bc36b36630520142eac6);
+            
+    
+            var marker_9a30faf9626086e520d96827673dce7d = L.marker(
+                [54.91450804275246, -1.3880874725261063],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_0567893e89b83e6eb07e5d9afada4f9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce4cc74d583473dbd8aecf31f5e4ccbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_498dc347a90a2886f2c2217261403fdc = $(`<div id="html_498dc347a90a2886f2c2217261403fdc" style="width: 100.0%; height: 100.0%;"><b>Sunderland</b><br>Estadio: Stadium of Light<br></div>`)[0];
+                popup_ce4cc74d583473dbd8aecf31f5e4ccbb.setContent(html_498dc347a90a2886f2c2217261403fdc);
+            
+        
+
+        marker_9a30faf9626086e520d96827673dce7d.bindPopup(popup_ce4cc74d583473dbd8aecf31f5e4ccbb)
+        ;
+
+        
+    
+    
+                marker_9a30faf9626086e520d96827673dce7d.setIcon(icon_0567893e89b83e6eb07e5d9afada4f9e);
+            
+    
+            var marker_106fe90d7a9c0f3ddec228c20ec337e6 = L.marker(
+                [51.604365963678504, -0.0662310954969904],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_55a6d4e83a8c728ba26fe630bcdd24b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d66cfa8f686f80015d50a06f4fd51c16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e2ecb39c8a1607b60259e2700c8cef3 = $(`<div id="html_2e2ecb39c8a1607b60259e2700c8cef3" style="width: 100.0%; height: 100.0%;"><b>Tottenham</b><br>Estadio: Tottenham Hotspur Stadium<br></div>`)[0];
+                popup_d66cfa8f686f80015d50a06f4fd51c16.setContent(html_2e2ecb39c8a1607b60259e2700c8cef3);
+            
+        
+
+        marker_106fe90d7a9c0f3ddec228c20ec337e6.bindPopup(popup_d66cfa8f686f80015d50a06f4fd51c16)
+        ;
+
+        
+    
+    
+                marker_106fe90d7a9c0f3ddec228c20ec337e6.setIcon(icon_55a6d4e83a8c728ba26fe630bcdd24b6);
+            
+    
+            var marker_bdbaa66dba5b274735860335f0e13d51 = L.marker(
+                [52.655843156727464, -2.0713337812325454],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_5cddd170b4df06882a29be4365d6aaf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdfa96cd8473993c223a079001113a56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_754746ade426110c47db25a9732c98f4 = $(`<div id="html_754746ade426110c47db25a9732c98f4" style="width: 100.0%; height: 100.0%;"><b>Wolves</b><br>Estadio: Molineux Stadium<br></div>`)[0];
+                popup_fdfa96cd8473993c223a079001113a56.setContent(html_754746ade426110c47db25a9732c98f4);
+            
+        
+
+        marker_bdbaa66dba5b274735860335f0e13d51.bindPopup(popup_fdfa96cd8473993c223a079001113a56)
+        ;
+
+        
+    
+    
+                marker_bdbaa66dba5b274735860335f0e13d51.setIcon(icon_5cddd170b4df06882a29be4365d6aaf9);
+            
+    
+            var marker_095dd86434e9d65e7e919ac8b3208978 = L.marker(
+                [51.48178420558964, -0.19079689974803873],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_9453922bb1f8c1dbf8cd6d28b3f1a787 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ac524def2817b2b54cd1155921d7f2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2705c3fbe931cd80cbb881a10cc8d23c = $(`<div id="html_2705c3fbe931cd80cbb881a10cc8d23c" style="width: 100.0%; height: 100.0%;"><b>Chelsea</b><br>Estadio: Stamford Bridge<br></div>`)[0];
+                popup_6ac524def2817b2b54cd1155921d7f2a.setContent(html_2705c3fbe931cd80cbb881a10cc8d23c);
+            
+        
+
+        marker_095dd86434e9d65e7e919ac8b3208978.bindPopup(popup_6ac524def2817b2b54cd1155921d7f2a)
+        ;
+
+        
+    
+    
+                marker_095dd86434e9d65e7e919ac8b3208978.setIcon(icon_9453922bb1f8c1dbf8cd6d28b3f1a787);
+            
+    
+            var marker_bc24641c21b56c4066a545290021b757 = L.marker(
+                [52.94261183022053, -1.1330885675177838],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_37fbe4439326e4746c5ad52bfcd69340 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8072ccbd86e4b989ea3d77f20acf1931 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc70dc249f175ecebaf648cb946ada7a = $(`<div id="html_bc70dc249f175ecebaf648cb946ada7a" style="width: 100.0%; height: 100.0%;"><b>Nott'm Forest</b><br>Estadio: Nottingham Forest Football Club<br></div>`)[0];
+                popup_8072ccbd86e4b989ea3d77f20acf1931.setContent(html_bc70dc249f175ecebaf648cb946ada7a);
+            
+        
+
+        marker_bc24641c21b56c4066a545290021b757.bindPopup(popup_8072ccbd86e4b989ea3d77f20acf1931)
+        ;
+
+        
+    
+    
+                marker_bc24641c21b56c4066a545290021b757.setIcon(icon_37fbe4439326e4746c5ad52bfcd69340);
+            
+    
+            var marker_5d17571b4b7b74271fbff5999b900539 = L.marker(
+                [53.463141907344706, -2.2912435437916585],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_ea2d3a51b01ab86fabfee5e66c17393c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71f14d6c5adec4ed44759fadfce6ef4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a3783123bea245ca3bbbf8f64fa73b4 = $(`<div id="html_6a3783123bea245ca3bbbf8f64fa73b4" style="width: 100.0%; height: 100.0%;"><b>Man United</b><br>Estadio: Old Trafford<br></div>`)[0];
+                popup_71f14d6c5adec4ed44759fadfce6ef4d.setContent(html_6a3783123bea245ca3bbbf8f64fa73b4);
+            
+        
+
+        marker_5d17571b4b7b74271fbff5999b900539.bindPopup(popup_71f14d6c5adec4ed44759fadfce6ef4d)
+        ;
+
+        
+    
+    
+                marker_5d17571b4b7b74271fbff5999b900539.setIcon(icon_ea2d3a51b01ab86fabfee5e66c17393c);
+            
+    
+            var marker_41e4e81f8193914adb10a5e01f4db054 = L.marker(
+                [53.777898590558216, -1.5720480437698887],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_b53ff1e432076cbacfe5e246e244b8cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_002f2a4f351bd6fa7c4c7ef596a81f7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14e0c7038be4c6971130c825f3342f46 = $(`<div id="html_14e0c7038be4c6971130c825f3342f46" style="width: 100.0%; height: 100.0%;"><b>Leeds</b><br>Estadio: Elland Road<br></div>`)[0];
+                popup_002f2a4f351bd6fa7c4c7ef596a81f7f.setContent(html_14e0c7038be4c6971130c825f3342f46);
+            
+        
+
+        marker_41e4e81f8193914adb10a5e01f4db054.bindPopup(popup_002f2a4f351bd6fa7c4c7ef596a81f7f)
+        ;
+
+        
+    
+    
+                marker_41e4e81f8193914adb10a5e01f4db054.setIcon(icon_b53ff1e432076cbacfe5e246e244b8cb);
+            
+    
+            var marker_7950168ed97545997e23122cb383b60c = L.marker(
+                [51.53876789636429, -0.01648116111563997],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_3655c99bb3d09ce2a27964b6ec70c90c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_824a10dafd7653e9dd3acbd03832386c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e845b4b29e11a9cb7008564cd60dfbb2 = $(`<div id="html_e845b4b29e11a9cb7008564cd60dfbb2" style="width: 100.0%; height: 100.0%;"><b>West Ham</b><br>Estadio: London Stadium<br></div>`)[0];
+                popup_824a10dafd7653e9dd3acbd03832386c.setContent(html_e845b4b29e11a9cb7008564cd60dfbb2);
+            
+        
+
+        marker_7950168ed97545997e23122cb383b60c.bindPopup(popup_824a10dafd7653e9dd3acbd03832386c)
+        ;
+
+        
+    
+    
+                marker_7950168ed97545997e23122cb383b60c.setIcon(icon_3655c99bb3d09ce2a27964b6ec70c90c);
+            
+    
+            var marker_f343327de6346d4878c99d70d211cf15 = L.marker(
+                [53.48323998374517, -2.2002985014617087],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_88f8449b21409af85f0c56fe555179d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ae957651adc8856ed30af9495955b41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50627151be4c4eb908f6b13f1de7c134 = $(`<div id="html_50627151be4c4eb908f6b13f1de7c134" style="width: 100.0%; height: 100.0%;"><b>Man City</b><br>Estadio: Etihad Stadium<br></div>`)[0];
+                popup_1ae957651adc8856ed30af9495955b41.setContent(html_50627151be4c4eb908f6b13f1de7c134);
+            
+        
+
+        marker_f343327de6346d4878c99d70d211cf15.bindPopup(popup_1ae957651adc8856ed30af9495955b41)
+        ;
+
+        
+    
+    
+                marker_f343327de6346d4878c99d70d211cf15.setIcon(icon_88f8449b21409af85f0c56fe555179d7);
+            
+    
+            var marker_5ada7a530360ae6c57ee5aa975fa659b = L.marker(
+                [50.73494021778099, -1.8390997611693025],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_272cb613789a48462f74322919c0276c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a5654877ada315d8f8db1946bb41764 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52b150bdf1d68732b523ab4c55e71841 = $(`<div id="html_52b150bdf1d68732b523ab4c55e71841" style="width: 100.0%; height: 100.0%;"><b>Bournemouth</b><br>Estadio: Vitality Stadium<br></div>`)[0];
+                popup_4a5654877ada315d8f8db1946bb41764.setContent(html_52b150bdf1d68732b523ab4c55e71841);
+            
+        
+
+        marker_5ada7a530360ae6c57ee5aa975fa659b.bindPopup(popup_4a5654877ada315d8f8db1946bb41764)
+        ;
+
+        
+    
+    
+                marker_5ada7a530360ae6c57ee5aa975fa659b.setIcon(icon_272cb613789a48462f74322919c0276c);
+            
+    
+            var marker_383ebff9a928db785e18a8f6c45a5d1d = L.marker(
+                [51.490948036094245, -0.2887910881045908],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_11d75e4fb262bd73356627e3caa5b972 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8e35b7079e5b2b6745aeedf8900a7c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87bc7759ad90afc0b42d7dbfcbcfb674 = $(`<div id="html_87bc7759ad90afc0b42d7dbfcbcfb674" style="width: 100.0%; height: 100.0%;"><b>Brentford</b><br>Estadio: Gtech Community Stadium<br></div>`)[0];
+                popup_d8e35b7079e5b2b6745aeedf8900a7c3.setContent(html_87bc7759ad90afc0b42d7dbfcbcfb674);
+            
+        
+
+        marker_383ebff9a928db785e18a8f6c45a5d1d.bindPopup(popup_d8e35b7079e5b2b6745aeedf8900a7c3)
+        ;
+
+        
+    
+    
+                marker_383ebff9a928db785e18a8f6c45a5d1d.setIcon(icon_11d75e4fb262bd73356627e3caa5b972);
+            
+    
+            var marker_ff6c8c4f0603acd8c04eee8d8fd042fa = L.marker(
+                [53.78853484596945, -2.2305725038334048],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_bb3b448abe56798803068e0261f57d0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02917e994811d72bb7377061301849af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15a83aca1e7adb9d24393a04cb3ace37 = $(`<div id="html_15a83aca1e7adb9d24393a04cb3ace37" style="width: 100.0%; height: 100.0%;"><b>Burnley</b><br>Estadio: Turf Moor<br></div>`)[0];
+                popup_02917e994811d72bb7377061301849af.setContent(html_15a83aca1e7adb9d24393a04cb3ace37);
+            
+        
+
+        marker_ff6c8c4f0603acd8c04eee8d8fd042fa.bindPopup(popup_02917e994811d72bb7377061301849af)
+        ;
+
+        
+    
+    
+                marker_ff6c8c4f0603acd8c04eee8d8fd042fa.setIcon(icon_bb3b448abe56798803068e0261f57d0f);
+            
+    
+            var marker_117d3ef3ef7e0635cad2123b4c5cc829 = L.marker(
+                [51.55514877960156, -0.10833543042880615],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_dd3bdedf2f44175af64a0fe2be95b74d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77b0e438dab95a84e2e695d9d340e3d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cbb05a94b7fcc7d08c7371e31c32ca8 = $(`<div id="html_8cbb05a94b7fcc7d08c7371e31c32ca8" style="width: 100.0%; height: 100.0%;"><b>Arsenal</b><br>Estadio: Emirates Stadium<br></div>`)[0];
+                popup_77b0e438dab95a84e2e695d9d340e3d1.setContent(html_8cbb05a94b7fcc7d08c7371e31c32ca8);
+            
+        
+
+        marker_117d3ef3ef7e0635cad2123b4c5cc829.bindPopup(popup_77b0e438dab95a84e2e695d9d340e3d1)
+        ;
+
+        
+    
+    
+                marker_117d3ef3ef7e0635cad2123b4c5cc829.setIcon(icon_dd3bdedf2f44175af64a0fe2be95b74d);
+            
+    
+            var marker_7838bcdd5656e02dfe844af58a1cf4d2 = L.marker(
+                [51.39810349721527, -0.08608761879652825],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_c19f1aeb45e49e2af31627f229063b41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8565f4bfd28d068148192478511595a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b833d8ec9994e4a5a42ea9bb0a3b601 = $(`<div id="html_2b833d8ec9994e4a5a42ea9bb0a3b601" style="width: 100.0%; height: 100.0%;"><b>Crystal Palace</b><br>Estadio: Selhurst Park Stadium<br></div>`)[0];
+                popup_f8565f4bfd28d068148192478511595a.setContent(html_2b833d8ec9994e4a5a42ea9bb0a3b601);
+            
+        
+
+        marker_7838bcdd5656e02dfe844af58a1cf4d2.bindPopup(popup_f8565f4bfd28d068148192478511595a)
+        ;
+
+        
+    
+    
+                marker_7838bcdd5656e02dfe844af58a1cf4d2.setIcon(icon_c19f1aeb45e49e2af31627f229063b41);
+            
+    
+            var marker_cc0535e90f3ebb4f119ca18267517657 = L.marker(
+                [53.42513174683433, -3.0026379149585947],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_a49e7d72e07e9436099a0506c31f294b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77f4032a1445987ac97c812396d6ce97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_277c361167dc5319b43d807ac04af5c7 = $(`<div id="html_277c361167dc5319b43d807ac04af5c7" style="width: 100.0%; height: 100.0%;"><b>Everton</b><br>Estadio: Hill Dickinson Stadium<br></div>`)[0];
+                popup_77f4032a1445987ac97c812396d6ce97.setContent(html_277c361167dc5319b43d807ac04af5c7);
+            
+        
+
+        marker_cc0535e90f3ebb4f119ca18267517657.bindPopup(popup_77f4032a1445987ac97c812396d6ce97)
+        ;
+
+        
+    
+    
+                marker_cc0535e90f3ebb4f119ca18267517657.setIcon(icon_a49e7d72e07e9436099a0506c31f294b);
+            
+    
+            var marker_ea3898c06cb2cd875e802f260bd4055c = L.marker(
+                [51.4750272397981, -0.22113573467703432],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_db19bc4ec70d7f85798b176950f3a86a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc09b2393f281e2aca7216c8a496b52e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7d116c31cd5701bb7a1dfb36030f894 = $(`<div id="html_a7d116c31cd5701bb7a1dfb36030f894" style="width: 100.0%; height: 100.0%;"><b>Fulham</b><br>Estadio: Craven Cottage<br></div>`)[0];
+                popup_cc09b2393f281e2aca7216c8a496b52e.setContent(html_a7d116c31cd5701bb7a1dfb36030f894);
+            
+        
+
+        marker_ea3898c06cb2cd875e802f260bd4055c.bindPopup(popup_cc09b2393f281e2aca7216c8a496b52e)
+        ;
+
+        
+    
+    
+                marker_ea3898c06cb2cd875e802f260bd4055c.setIcon(icon_db19bc4ec70d7f85798b176950f3a86a);
+            
+    
+            var marker_6a0d9b73d7b7ffdc337148dc1e287ec2 = L.marker(
+                [54.97557480303132, -1.6224223370504427],
+                {
+}
+            ).addTo(map_63057c9427c93763a8ea78abf6f703be);
+        
+    
+            var icon_c44544de8911e4e7d07505be337d81b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "music note",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d62a1a88340e8501dc90d1f3fa3fbe8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42ee53d25da92cc4cde50fd6ea0933ab = $(`<div id="html_42ee53d25da92cc4cde50fd6ea0933ab" style="width: 100.0%; height: 100.0%;"><b>Newcastle</b><br>Estadio: St James' Park<br></div>`)[0];
+                popup_d62a1a88340e8501dc90d1f3fa3fbe8a.setContent(html_42ee53d25da92cc4cde50fd6ea0933ab);
+            
+        
+
+        marker_6a0d9b73d7b7ffdc337148dc1e287ec2.bindPopup(popup_d62a1a88340e8501dc90d1f3fa3fbe8a)
+        ;
+
+        
+    
+    
+                marker_6a0d9b73d7b7ffdc337148dc1e287ec2.setIcon(icon_c44544de8911e4e7d07505be337d81b0);
+            
+</script>
+</html>
